@@ -1,3 +1,18 @@
+body {
+  background-color: #f0f3fa;
+  background-image: radial-gradient(circle at 20% 30%, #d5deef, transparent 20%),
+    radial-gradient(circle at 80% 70%, #b1c9ef, transparent 20%),
+    radial-gradient(circle at 50% 90%, #d5deef, transparent 20%),
+    radial-gradient(circle at 30% 20%, #b1c9ef, transparent 20%);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  /* color: #395886;  */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 .input-field {
   position: relative;
 }
@@ -12,7 +27,6 @@
 .register-page {
   display: flex;
   min-height: 100vh;
-  background: #f1fefe;
 }
 
 .register-image {
@@ -24,7 +38,7 @@
 .register-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 2rem;
 }
 
@@ -37,7 +51,7 @@
 }
 
 .register-card {
-  background: white;
+  background: #ffffff; /* Mantén el blanco para un buen contraste */
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -46,14 +60,14 @@
 }
 
 .register-title {
-  color: #010101;
+  color: #395886; /* Color oscuro para el título */
   font-size: 28px;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .register-subtitle {
-  color: #010101;
+  color: #638ecb; /* Color ligeramente más claro para el subtítulo */
   font-size: 16px;
   margin-bottom: 30px;
   text-align: center;
@@ -72,11 +86,11 @@
 .input-container input {
   width: 100%;
   padding: 10px 15px 10px 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #d5deef; /* Borde con un color suave */
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.3s ease;
-  color: #010101;
+  color: #395886; /* Color oscuro para el texto */
 }
 
 .input-container label {
@@ -85,17 +99,22 @@
   left: 40px;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #999;
+  color: #b1c9ef; /* Color más suave para el texto */
   pointer-events: none;
   transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #8aaee0 !important;
+  box-shadow: 0 1px 0 0 #8aaee0 !important;
 }
 
 .input-container.has-value label,
 .input-container input:focus + label {
   top: 0;
   font-size: 12px;
-  color: #14c593;
-  background: white;
+  color: #8aaee0 !important; /* Color intermedio para el label al enfocar */
+  background: #ffffff !important;
   padding: 0 5px;
 }
 
@@ -104,7 +123,7 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  color: #14c593;
+  color: #8aaee0; /* Color intermedio para el icono */
 }
 
 .toggle-password {
@@ -113,12 +132,12 @@
   right: 15px;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #14c593;
+  color: #8aaee0; /* Mismo color para el toggle de contraseña */
 }
 
 .register-button {
-  background: #14c593;
-  color: white;
+  background: #395886; /* Color oscuro para el botón */
+  color: #ffffff;
   border: none;
   padding: 12px;
   border-radius: 5px;
@@ -128,7 +147,7 @@
 }
 
 .register-button:hover {
-  background: #11a37d;
+  background: #638ecb; /* Color ligeramente más claro al hacer hover */
 }
 
 .register-button:disabled {
@@ -136,15 +155,15 @@
   cursor: not-allowed;
 }
 
-.login-link {
+.register-footer {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #010101;
+  color: #395886; /* Color oscuro para el texto */
 }
 
-.login-link a {
-  color: #14c593;
+.register-footer a {
+  color: #638ecb; /* Color para el enlace */
   text-decoration: none;
 }
 

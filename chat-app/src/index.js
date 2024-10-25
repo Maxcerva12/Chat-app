@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './store/Store.js';
+import { SocketProvider } from './context/SocketContext'; // Importar el proveedor de contexto
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <SocketProvider>
+        <App />
+      </SocketProvider>
+    </Provider>
   </React.StrictMode>
 );
 

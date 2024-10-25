@@ -62,7 +62,7 @@ const Login = () => {
   return (
     <div className="login-page animate__animated animate__zoomIn">
       <div className="login-image">
-        <img loading="lazy" src="/imgs/8738195.jpg" alt="Login" />
+        <img loading="lazy" src="/imgs/12.png" alt="Login" />
       </div>
       <div className="login-container">
         <div className="login-card">

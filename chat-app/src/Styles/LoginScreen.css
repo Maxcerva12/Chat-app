@@ -1,7 +1,21 @@
+body {
+  background-color: #f0f3fa;
+  background-image: radial-gradient(circle at 20% 30%, #d5deef, transparent 20%),
+    radial-gradient(circle at 80% 70%, #b1c9ef, transparent 20%),
+    radial-gradient(circle at 50% 90%, #d5deef, transparent 20%),
+    radial-gradient(circle at 30% 20%, #b1c9ef, transparent 20%);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  /* color: #395886;  */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 .login-page {
   display: flex;
   min-height: 100vh;
-  background: #f1fefe;
 }
 
 .login-image {
@@ -13,7 +27,7 @@
 .login-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 2rem;
 }
 
@@ -26,7 +40,7 @@
 }
 
 .login-card {
-  background: white;
+  background: #ffffff; /* Mantén el blanco para un buen contraste */
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -35,14 +49,14 @@
 }
 
 .login-title {
-  color: #010101;
+  color: #395886; /* Color oscuro para el título */
   font-size: 28px;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .login-subtitle {
-  color: #010101;
+  color: #638ecb; /* Color ligeramente más claro para el subtítulo */
   font-size: 16px;
   margin-bottom: 30px;
   text-align: center;
@@ -61,11 +75,11 @@
 .input-container input {
   width: 87% !important;
   padding: 0px 0px 0px 40px !important;
-  border: 1px solid #ddd;
+  border: 1px solid #d5deef; /* Borde con un color suave */
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.3s ease;
-  color: #010101;
+  color: #395886; /* Color oscuro para el texto */
 }
 
 .input-container label {
@@ -74,17 +88,22 @@
   left: 40px;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #999;
+  color: #b1c9ef; /* Color más suave para el texto */
   pointer-events: none;
   transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #8aaee0 !important;
+  box-shadow: 0 1px 0 0 #8aaee0 !important;
 }
 
 .input-container.has-value label,
 .input-container input:focus + label {
   top: 0;
   font-size: 12px;
-  color: #14c593;
-  background: white;
+  color: #8aaee0; /* Color intermedio para el label al enfocar */
+  background: #ffffff;
   padding: 0 5px;
 }
 
@@ -93,7 +112,7 @@
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  color: #14c593;
+  color: #8aaee0; /* Color intermedio para el icono */
 }
 
 .toggle-password {
@@ -102,12 +121,12 @@
   right: 15px;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #14c593;
+  color: #8aaee0; /* Mismo color para el toggle de contraseña */
 }
 
 .login-button {
-  background: #14c593;
-  color: white;
+  background: #395886; /* Color oscuro para el botón */
+  color: #ffffff;
   border: none;
   padding: 12px;
   border-radius: 5px;
@@ -117,7 +136,7 @@
 }
 
 .login-button:hover {
-  background: #11a37d;
+  background: #638ecb; /* Color ligeramente más claro al hacer hover */
 }
 
 .separator {
@@ -131,18 +150,18 @@
 .separator::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d5deef; /* Línea separadora en un color suave */
 }
 
 .separator span {
   padding: 0 10px;
-  color: #010101;
+  color: #395886; /* Color oscuro para el texto del separador */
 }
 
 .google-button {
-  background: white;
-  color: #010101;
-  border: 1px solid #ddd;
+  background: #ffffff;
+  color: #395886; /* Color oscuro para el texto del botón */
+  border: 1px solid #d5deef; /* Borde en un color suave */
   padding: 12px;
   border-radius: 5px;
   font-size: 16px;
@@ -154,23 +173,23 @@
 }
 
 .google-button:hover {
-  background: #f5f5f5;
+  background: #f0f3fa; /* Color de fondo al hacer hover */
 }
 
 .google-button i {
   margin-right: 10px;
-  color: #14c593;
+  color: #8aaee0; /* Icono en un color intermedio */
 }
 
 .register-link {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #010101;
+  color: #395886; /* Color oscuro para el texto */
 }
 
 .register-link a {
-  color: #14c593;
+  color: #638ecb; /* Color para el enlace */
   text-decoration: none;
 }
 

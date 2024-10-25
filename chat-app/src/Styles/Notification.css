@@ -1,0 +1,33 @@
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f0f3fa;
+  border-left: 4px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: all 0.5s ease-in-out;
+  font-size: 16px;
+}
+
+.notification.success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.notification.error {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.notification h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.notification p {
+  margin: 0;
+}

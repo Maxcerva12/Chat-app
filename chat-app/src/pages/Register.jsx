@@ -225,7 +225,7 @@ const Register = () => {
   return (
     <div className="register-page animate__animated animate__zoomIn">
       <div className="register-image">
-        <img loading="lazy" src="/imgs/6034134.jpg" alt="Register" />
+        <img loading="lazy" src="/imgs/12.png" alt="Register" />
       </div>
       <div className="register-container">
         <div className="register-card">

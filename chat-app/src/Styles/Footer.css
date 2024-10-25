@@ -1,5 +1,5 @@
 .app-footer {
-  background-color: white;
+  background-color: transparent;
   padding: 40px 0;
   margin-top: 40px;
   border-radius: 2rem 2rem 0rem 0rem;
@@ -25,7 +25,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #14c593;
+  color: #395886;
 }
 
 .footer-text {
@@ -49,13 +49,13 @@
 }
 
 .footer-link:hover {
-  color: #14c593;
+  color: #628ecb;
 }
 
 .footer-link i {
   margin-right: 10px;
   font-size: 16px;
-  color: #14c593;
+  color: #395886;
 }
 
 @media (max-width: 768px) {
